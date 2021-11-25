@@ -1,5 +1,10 @@
 # go-sn - Serial Number Generator
 
+[![Go](https://github.com/kenkyu392/go-sn/actions/workflows/go.yml/badge.svg)](https://github.com/kenkyu392/go-sn/actions/workflows/go.yml)
+[![go.dev reference](https://img.shields.io/badge/go.dev-reference-00ADD8?logo=go)](https://pkg.go.dev/github.com/kenkyu392/go-sn)
+[![Go Report Card](https://goreportcard.com/badge/github.com/kenkyu392/go-sn)](https://goreportcard.com/report/github.com/kenkyu392/go-sn)
+[![license](https://img.shields.io/github/license/kenkyu392/go-sn)](LICENSE)
+
 Go library for generate serial numbers according to rules.
 
 This library is also useful for generating serial numbers in a human-readable format.

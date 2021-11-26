@@ -5,7 +5,8 @@ import (
 	"strconv"
 )
 
-// RandomAlphabet ...
+// RandomAlphabet creates a rule that returns a random  alphabet (a-zA-Z)
+// with the number of characters specified by length.
 func RandomAlphabet(length int) Rule {
 	return func() []rune {
 		var out = make([]rune, length)
@@ -21,7 +22,8 @@ func RandomAlphabet(length int) Rule {
 	}
 }
 
-// RandomUppercaseAlphabet ...
+// RandomUppercaseAlphabet creates a rule that returns a random alphabet (A-Z)
+// with the number of characters specified by length.
 func RandomUppercaseAlphabet(length int) Rule {
 	return func() []rune {
 		var out = make([]rune, length)
@@ -32,7 +34,8 @@ func RandomUppercaseAlphabet(length int) Rule {
 	}
 }
 
-// RandomLowercaseAlphabet ...
+// RandomLowercaseAlphabet creates a rule that returns a random alphabet (a-z)
+// with the number of characters specified by length.
 func RandomLowercaseAlphabet(length int) Rule {
 	return func() []rune {
 		var out = make([]rune, length)
@@ -43,7 +46,8 @@ func RandomLowercaseAlphabet(length int) Rule {
 	}
 }
 
-// RandomNumeric ...
+// RandomNumeric creates a rule that returns a random numeric (0-9)
+// with the number of characters specified by length.
 func RandomNumeric(length int) Rule {
 	return func() []rune {
 		var out = make([]rune, length)
@@ -54,7 +58,8 @@ func RandomNumeric(length int) Rule {
 	}
 }
 
-// RandomAlphabetAndNumeric ...
+// RandomAlphabet creates a rule that returns a random alphabet and numeric (a-zA-Z0-9)
+// with the number of characters specified by length.
 func RandomAlphabetAndNumeric(length int) Rule {
 	return func() []rune {
 		var out = make([]rune, length)

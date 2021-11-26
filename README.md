@@ -42,8 +42,12 @@ func main() {
 			[]string{"Dog", "Cat", "Fox", "Rat"},
 		),
 		rule.RandomAlphabetAndNumeric(4),
+		// Use rules for numbering and padding.
+		// You can also do customized numbering.
+		// -> (&rule.Counter{Start: 2, Size: 2, Padding: 4}).NumberingWithPadding(),
 		rule.NumberingWithPadding(4),
 	)
+
 	// You can change the delimiter.
 	g.Delimiter = "_"
 

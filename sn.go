@@ -1,10 +1,13 @@
 package sn
 
 import (
+	"fmt"
 	"strings"
 
 	"github.com/kenkyu392/go-sn/rule"
 )
+
+var _ fmt.Stringer = new(Generator)
 
 const (
 	// DefaultDelimiter is the delimiter character

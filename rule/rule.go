@@ -30,8 +30,8 @@ func Mixin(rules ...Rule) Rule {
 	}
 }
 
-// List ...
-func List(list []string) Rule {
+// RandomList ...
+func RandomList(list []string) Rule {
 	var length = len(list)
 	return func() []rune {
 		return []rune(list[rand.Intn(length)])

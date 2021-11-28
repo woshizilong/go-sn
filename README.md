@@ -38,7 +38,7 @@ func main() {
 			rule.RandomUppercaseAlphabet(2),
 			rule.RandomNumeric(2),
 		),
-		rule.List(
+		rule.RandomList(
 			[]string{"Dog", "Cat", "Fox", "Rat"},
 		),
 		rule.RandomAlphabetAndNumeric(4),

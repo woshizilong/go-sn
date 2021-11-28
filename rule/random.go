@@ -76,3 +76,11 @@ func RandomAlphabetAndNumeric(length int) Rule {
 		return out
 	}
 }
+
+// RandomList ...
+func RandomList(list []string) Rule {
+	var length = len(list)
+	return func() []rune {
+		return []rune(list[rand.Intn(length)])
+	}
+}

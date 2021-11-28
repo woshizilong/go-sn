@@ -58,7 +58,7 @@ func RandomNumeric(length int) Rule {
 	}
 }
 
-// RandomAlphabet creates a rule that returns a random alphabet and numeric (a-zA-Z0-9)
+// RandomAlphabetAndNumeric creates a rule that returns a random alphabet and numeric (a-zA-Z0-9)
 // with the number of characters specified by length.
 func RandomAlphabetAndNumeric(length int) Rule {
 	return func() []rune {
